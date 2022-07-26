@@ -56,11 +56,7 @@ public class BooksController {
     }
 
     @PostMapping()
-    public String create(@ModelAttribute("book")  Book Book,
-                         BindingResult bindingResult) {
-        if (bindingResult.hasErrors())
-            return "books/new";
-
+    public String create(@ModelAttribute("book")  Book Book) {
         booksService.save(Book);
         return "redirect:/books";
     }
