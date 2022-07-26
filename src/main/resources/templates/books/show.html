@@ -27,9 +27,7 @@
         <input type="submit" value="assign the book"/>
     </form>
 </div>
-
 <hr/>
-
 <form th:method="GET" th:action="@{/books/{id}/edit(id=${book.getId()})}">
     <input type="submit" value="edit"/>
 </form>
@@ -37,6 +35,7 @@
 <form th:method="DELETE" th:action="@{/books/{id}(id=${book.getId()})}">
     <input type="submit" value="delete"/>
 </form>
+<hr/>
 <a href="/books">books</a>
 
 </body>

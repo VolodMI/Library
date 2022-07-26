@@ -1,11 +1,7 @@
 package ua.testTask.Library.models;
 
-
-
 import org.hibernate.annotations.Table;
-
 import javax.persistence.*;
-
 
 @Entity
 @Table(appliesTo = "book")
@@ -18,10 +14,8 @@ public class Book {
     @Column(name = "title")
     private String title;
 
-
     @Column(name = "author")
     private String author;
-
 
     @Column(name = "year")
     private int year;
@@ -32,7 +26,6 @@ public class Book {
 
 
     public Book() {
-
     }
 
     public Book(String title, String author, int year) {
